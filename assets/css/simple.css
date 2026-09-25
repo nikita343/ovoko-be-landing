@@ -182,7 +182,7 @@
 .s-trio .s-link { font-size: 15px; margin-top: 16px; }
 @media (min-width: 768px) { .s-duo { grid-template-columns: 1fr 1fr; } .s-trio { grid-template-columns: repeat(3, 1fr); } .s-bcard { padding: 48px; } }
 @media (min-width: 1200px) {
-  .s-fits__head { grid-template-columns: 624px 515px; justify-content: space-between; }
+  .s-fits__head { grid-template-columns: minmax(0, 624px) minmax(0, 515px); justify-content: space-between; gap: 20px 48px; }
   .s-fits__head p { font-size: 20px; line-height: 31px; }
   .s-fits__head .s-h2 { line-height: 1; }
   .s-duo { margin-top: 64px; }
@@ -238,7 +238,7 @@
 .s-faq .faq__q { font-weight: 500; font-size: 18px; }
 .s-faq .faq__a p { color: var(--text-2); font-size: 16px; line-height: 1.6; }
 @media (min-width: 1200px) {
-  .s-faq__grid { grid-template-columns: 405px 733px; justify-content: space-between; }
+  .s-faq__grid { grid-template-columns: minmax(0, 405px) minmax(0, 733px); justify-content: space-between; gap: 48px; }
   .s-faq .s-h2 { font-size: 56px; line-height: 1.05; }
   .s-faq .faq__q { font-size: 20px; padding: 28px 0; }
 }
@@ -299,3 +299,5 @@ html[data-hero="b"] .hero-a-s { display: none; }
 @media (min-width: 1200px) { .s-midcta { margin-top: 80px; } }
 .s-press__logos { justify-content: flex-start; }
 .page-simple .s-hero__eyebrow { color: #000; }
+
+.s-faq .faq__list { width: auto; margin: 0; }

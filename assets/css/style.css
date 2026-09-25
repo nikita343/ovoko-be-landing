@@ -93,7 +93,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* ---------- Header + Hero A ---------- */
 .hero-a {
-  position: relative; z-index: 2;
+  position: relative; z-index: 2; overflow-x: clip;
   background: var(--metal); background-size: 4px 4px, 100% 100%;
 }
 .site-header { position: relative; z-index: 3; }
@@ -202,7 +202,7 @@ a.pcard:hover { border-color: rgba(0, 0, 0, 0.22); }
 .stats__title { margin-bottom: 24px; }
 .stats__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .stat { display: flex; flex-direction: column; justify-content: space-between; gap: 8px; padding: 14px; background: var(--white); border-radius: var(--radius); min-height: 118px; }
-.stat .num { font-size: 40px; }
+.stat .num { font-size: clamp(24px, 8.5vw, 40px); line-height: 1; }
 .stat p:last-child { font-size: 13px; line-height: 1.35; color: var(--text-2); overflow-wrap: break-word; hyphens: manual; }
 @media (min-width: 768px) {
   .stats__grid { gap: 12px; }
@@ -230,7 +230,8 @@ a.pcard:hover { border-color: rgba(0, 0, 0, 0.22); }
 .price__ex { display: flex; align-items: center; gap: 12px; font-size: 15px; line-height: 1.4; color: var(--text-2); }
 .price__ex b { color: #000; font-weight: 600; }
 .price__ex img { flex: none; width: 56px; height: 48px; object-fit: contain; background: var(--white); border-radius: 8px; padding: 4px; }
-.deal { background: var(--white); border-radius: var(--radius); padding: 20px; }
+.deal { background: var(--white); border-radius: var(--radius); padding: 20px; overflow: hidden; }
+.deal__col { min-width: 0; }
 .deal__nums { display: grid; gap: 10px; }
 .deal__col { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .deal__k { font-weight: 600; font-size: 15px; line-height: 1.2; color: var(--text-2); }
@@ -254,22 +255,22 @@ a.pcard:hover { border-color: rgba(0, 0, 0, 0.22); }
 .price__links { display: flex; flex-wrap: wrap; gap: 12px 28px; }
 @media (min-width: 768px) {
   .deal { padding: 32px; }
-  .deal__nums { grid-template-columns: auto auto auto auto auto; justify-content: space-between; align-items: stretch; gap: 12px; }
+  .deal__nums { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 16px 12px; }
   .deal__col { flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 12px; }
   .deal__op { display: block; align-self: end; font-family: var(--font-num); font-size: 44px; line-height: 1; color: var(--orange); padding-bottom: 8px; }
-  .deal__col--new .num { font-size: 60px; }
-  .deal__col--ovoko .num { font-size: 84px; }
-  .deal__save .num { font-size: 60px; }
+  .deal__col--new .num { font-size: clamp(44px, 6vw, 60px); }
+  .deal__col--ovoko .num { font-size: clamp(60px, 8.4vw, 84px); }
+  .deal__save .num { font-size: clamp(44px, 6vw, 60px); }
 }
 @media (min-width: 1200px) {
   .price { padding: 90px 0 0; }
   .price__head { justify-items: center; text-align: center; gap: 18px; margin-bottom: 36px; }
   .deal { padding: 48px 64px 40px; max-width: 1112px; margin: 0 auto; }
   .deal__k { font-size: 18px; }
-  .deal__col--new .num { font-size: 88px; }
-  .deal__col--ovoko .num { font-size: 124px; }
+  .deal__col--new .num { font-size: clamp(64px, 6.1vw, 88px); }
+  .deal__col--ovoko .num { font-size: clamp(88px, 8.6vw, 124px); }
   .deal__save { padding: 10px 20px 6px; border-radius: 16px; }
-  .deal__save .num { font-size: 88px; }
+  .deal__save .num { font-size: clamp(64px, 6.1vw, 88px); }
   .deal__op { font-size: 64px; padding-bottom: 18px; }
   .deal__bar { height: 18px; margin-top: 36px; border-radius: 9px; }
   .deal__legend { font-size: 14px; }
@@ -278,7 +279,7 @@ a.pcard:hover { border-color: rgba(0, 0, 0, 0.22); }
 }
 /* small version inside the comparison cards: always one row */
 .deal--s { padding: 0; background: none; }
-.deal--s .deal__nums { grid-template-columns: auto auto auto auto auto; justify-content: space-between; align-items: stretch; gap: 6px; }
+.deal--s .deal__nums { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 8px 6px; }
 .deal--s .deal__col { flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 6px; }
 .deal--s .deal__k { font-size: 12px; }
 .deal--s .deal__op { display: block; align-self: end; font-family: var(--font-num); font-size: 26px; line-height: 1; color: var(--orange); padding-bottom: 4px; }
