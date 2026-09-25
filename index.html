@@ -31,10 +31,6 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Pièces auto d’origine d’occasion jusqu’à −76 % | Ovoko Belgique","description":"Ovoko réunit 46 millions de pièces auto d’occasion de 7 400 casses automobiles et vendeurs professionnels européens. Retour gratuit, livraison suivie en Belgique.","inLanguage":"fr-BE","url":"https://ovoko-be-landing.vercel.app/","publisher":{"@type":"Organization","name":"Ovoko","url":"https://ovoko.be/fr","logo":"https://ovoko-be-landing.vercel.app/assets/icons/icon-512.png"}}
 </script>
-<script>
-  /* Hero A/B: ?hero=b shows the photo hero with the parts slider. Set before paint to avoid a flash. */
-  (function () { try { var h = new URLSearchParams(location.search).get('hero'); document.documentElement.setAttribute('data-hero', h === 'b' ? 'b' : 'a'); } catch (e) {} })();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -108,62 +104,6 @@
   </div>
 </header>
 
-<!-- ================= HERO B · photo + parts slider (?hero=b) ================= -->
-<header class="hero-b" id="top-b">
-  <div class="container">
-    <div class="hero-b__top">
-      <a href="https://ovoko.be/fr" aria-label="Ovoko"><img class="logo" src="assets/icons/logo-white.svg" width="133" height="28" alt="Ovoko"></a>
-      <nav class="hero-b__nav" aria-label="Informations">
-        <a class="navlink" href="https://ovoko.be/fr/retours-et-garantie">Retours</a>
-        <a class="navlink" href="https://ovoko.be/fr/livraison">Livraison</a>
-        <a class="navlink" href="https://ovoko.be/fr/paiement">Paiement</a>
-        <a class="pill-dark" href="https://ovoko.be/fr/livraison"><img src="assets/icons/dot-orange.svg" alt="" width="8" height="8"> Livraison en Belgique</a>
-      </nav>
-    </div>
-    <div class="hero-b__grid">
-      <div class="hero-b__copy">
-        <span class="eyebrow-glass">Pièces auto d’occasion</span>
-        <h1>La même pièce<br> d’origine,<br> <span class="dim">jusqu’à −76&nbsp;%.*</span></h1>
-        <p class="hero-b__sub">Ovoko réunit 46 millions de pièces d’occasion de 7&nbsp;400 casses automobiles et vendeurs professionnels européens, sur une seule plateforme.</p>
-        <div class="hero-b__cta">
-          <a class="btn-pill js-cta" data-cta="hero-b" href="https://ovoko.be/fr">Trouver ma pièce <span class="arrow"><img src="assets/icons/arrow-white.svg" alt="" width="22" height="22"></span></a>
-          <a class="sec" href="#annonces">Voir des annonces réelles</a>
-        </div>
-        <p class="hero-b__micro">Aucun compte nécessaire. Recherche par marque, modèle et pièce.</p>
-      </div>
-      <div class="slider" data-slider data-interval="5000">
-        <div class="slider__viewport">
-          <a class="slide is-active js-cta" data-cta="slide-1" href="https://ovoko.be/fr/les-pieces/fkk6899-04l903024s-volkswagen-golf-vii-generateur-alternateur" id="slide-1" role="tabpanel" aria-label="Alternateur · Golf VII 1.6 TDI">
-            <img src="assets/img/hb-slide-1.jpg" alt="Alternateur d’occasion Volkswagen Golf VII 1.6 TDI" width="480" height="500">
-            <span class="slide__price"><b>78,55&nbsp;€</b><span>au lieu de 227,87&nbsp;€ neuve</span></span>
-            <span class="slide__count">01 / 03</span>
-            <span class="slide__bar"><span class="slide__avatar">F</span><span class="slide__meta"><b>Alternateur · Golf VII 1.6 TDI</b><span>Meilleur vendeur · France · 127&nbsp;471&nbsp;km</span></span><span class="slide__view">Voir l’annonce</span></span>
-          </a>
-          <a class="slide js-cta" data-cta="slide-2" href="https://ovoko.be/fr/chercher?q=9802221880" id="slide-2" role="tabpanel" aria-label="Phare avant · Peugeot 208">
-            <img src="assets/img/hb-slide-2.jpg" alt="Phare avant d’occasion Peugeot 208" width="480" height="500">
-            <span class="slide__price"><b>101,30&nbsp;€</b><span>au lieu de 134,99&nbsp;€ neuve</span></span>
-            <span class="slide__count">02 / 03</span>
-            <span class="slide__bar"><span class="slide__avatar">W</span><span class="slide__meta"><b>Phare avant · Peugeot 208</b><span>Meilleur vendeur · France · 170&nbsp;000&nbsp;km</span></span><span class="slide__view">Voir l’annonce</span></span>
-          </a>
-          <a class="slide js-cta" data-cta="slide-3" href="https://ovoko.be/fr/chercher?q=1611508780" id="slide-3" role="tabpanel" aria-label="Rétroviseur · Peugeot 308">
-            <img src="assets/img/hb-slide-3.jpg" alt="Rétroviseur d’occasion Peugeot 308" width="480" height="500">
-            <span class="slide__price"><b>103,88&nbsp;€</b><span>au lieu de 714,38&nbsp;€ neuve</span></span>
-            <span class="slide__count">03 / 03</span>
-            <span class="slide__bar"><span class="slide__avatar">S</span><span class="slide__meta"><b>Rétroviseur · Peugeot 308</b><span>Meilleur vendeur · Pays-Bas · 158&nbsp;015&nbsp;km</span></span><span class="slide__view">Voir l’annonce</span></span>
-          </a>
-        </div>
-        <div class="chips" role="tablist" aria-label="Choisir une pièce">
-          <button class="chip" role="tab" aria-selected="true" aria-controls="slide-1">Alternateur</button>
-          <button class="chip" role="tab" aria-selected="false" aria-controls="slide-2">Phare avant</button>
-          <button class="chip" role="tab" aria-selected="false" aria-controls="slide-3">Rétroviseur</button>
-        </div>
-        <div class="progress" aria-hidden="true"><i></i></div>
-      </div>
-    </div>
-    <p class="hero-b__foot">*Étude Ovoko&nbsp;: écart de prix entre une pièce d’origine d’occasion sur Ovoko et la même pièce achetée neuve. L’économie varie selon la pièce et le vendeur.</p>
-  </div>
-</header>
-
 <main id="main">
 
 <!-- ================= Protections + stats ================= -->
@@ -172,8 +112,8 @@
     <h2 class="h2 stats__title" id="stats-title"><span class="orange">Retours gratuits</span> et livraison suivie sécurisée</h2>
     <div class="stats__band">
       <div class="stats__grid" data-reveal>
-        <div class="stat"><p class="num">100&nbsp;%</p><p>Entreprises vérifiées</p></div>
-        <div class="stat"><p class="num">7&nbsp;400</p><p>Vendeurs professionnels</p></div>
+        <div class="stat"><p class="num">14&nbsp;jours</p><p>Retour gratuit</p></div>
+        <div class="stat"><p class="num">1&nbsp;an</p><p>Garantie sur une sélection de pièces</p></div>
         <div class="stat"><p class="num">46&nbsp;M+</p><p>Pièces d’occasion</p></div>
       </div>
     </div>
@@ -183,40 +123,28 @@
 <!-- ================= Same part, two prices ================= -->
 <section class="price" aria-labelledby="price-title">
   <div class="container">
-    <h2 class="h2 price__title" id="price-title">Même pièce. <span class="orange">Deux prix.</span></h2>
-    <div class="price__card" style="--used: 34.47%">
-      <div class="price__part price__part--mobile">
-        <h3>Alternateur · Volkswagen Golf&nbsp;VII 1.6&nbsp;TDI</h3>
-        <span class="thumb"><img src="assets/img/thumb-alternator.jpg" alt="" width="75" height="65" loading="lazy"></span>
+    <div class="price__head">
+      <h2 class="h2 price__title" id="price-title">Même pièce. <span class="orange">Deux prix.</span></h2>
+      <p class="price__ex"><img src="assets/img/thumb-alternator.jpg" alt="" width="75" height="65" loading="lazy"><span><b>Exemple réel&nbsp;:</b> alternateur Volkswagen Golf&nbsp;VII 1.6&nbsp;TDI, réf. 04L903024S</span></p>
+    </div>
+    <div class="deal" data-reveal style="--pay: 34.47%">
+      <div class="deal__nums">
+        <div class="deal__col deal__col--new"><span class="deal__k">Prix neuf</span><s class="num">227,87&nbsp;€</s></div>
+        <span class="deal__op" aria-hidden="true">→</span>
+        <div class="deal__col deal__col--ovoko"><span class="deal__k">Sur Ovoko</span><b class="num">78,55&nbsp;€</b></div>
+        <span class="deal__op" aria-hidden="true">→</span>
+        <div class="deal__col deal__col--save"><span class="deal__k">Vous économisez</span><span class="deal__save"><span class="num">149&nbsp;€</span></span></div>
       </div>
-      <div class="price__bars">
-        <div class="bars" data-reveal>
-          <div class="bar-row">
-            <div class="bar bar--new"><span class="num">227,87&nbsp;€</span></div>
-            <p class="bar-label">Neuve (Valeo), revendeur en ligne</p>
-          </div>
-          <div class="bar-row">
-            <div class="bar bar--used"><span class="num">78,55&nbsp;€</span></div>
-            <p class="bar-label">D’occasion sur Ovoko</p>
-          </div>
-          <div class="bar-row">
-            <div class="bar bar--save"><span class="fill"><span class="num">149&nbsp;€</span></span></div>
-            <p class="bar-label">Votre économie</p>
-          </div>
-        </div>
+      <div class="deal__bar" aria-hidden="true"><i class="deal__pay"></i><i class="deal__saved"></i></div>
+      <p class="deal__legend" aria-hidden="true"><span>Vous payez 34&nbsp;%</span><span>Vous économisez 66&nbsp;%</span></p>
+    </div>
+    <div class="price__foot">
+      <p class="price__fine">Neuf&nbsp;: Valeo, même référence, chez un revendeur en ligne. Sur Ovoko&nbsp;: pièce d’origine d’occasion. Prix TVAC, hors frais de livraison et de service&nbsp;; dans cet exemple, la livraison vers la Belgique est estimée à 24,84&nbsp;€.</p>
+      <div class="price__links">
+        <button class="link js-toggle" aria-expanded="false" aria-controls="price-src">Prix vérifiés en septembre 2026 <img src="assets/icons/arrow.svg" alt="" width="22" height="22"></button>
+        <a class="link js-cta" data-cta="price-listings" href="https://ovoko.be/fr/chercher?q=04L903024S">Voir les annonces de cette pièce&nbsp;↗</a>
       </div>
-      <div class="price__side">
-        <div class="price__part price__part--desk">
-          <h3>Alternateur · Volkswagen Golf&nbsp;VII 1.6&nbsp;TDI</h3>
-          <span class="thumb"><img src="assets/img/thumb-alternator.jpg" alt="" width="75" height="65" loading="lazy"></span>
-        </div>
-        <p class="price__fine">Prix des pièces TVAC, hors frais de livraison et de service. Dans cet exemple, la livraison Ovoko vers la Belgique est estimée à 24,84&nbsp;€. Le prix final dépend du vendeur et de l’adresse de livraison.</p>
-        <div class="price__links">
-          <button class="link js-toggle" aria-expanded="false" aria-controls="price-src">Prix vérifiés en septembre 2026 <img src="assets/icons/arrow.svg" alt="" width="22" height="22"></button>
-          <p class="price__fine" id="price-src" hidden>Relevés le 25 septembre 2026. Ovoko&nbsp;: SAS Société Nouvelle Fornes (France, Meilleur vendeur), Golf VII 1.6 TDI de 2015, 127&nbsp;471&nbsp;km, livraison vers la Belgique. Neuve&nbsp;: alternateur Valeo 439791 (même référence 04L903024S) chez un revendeur en ligne livrant en Belgique.</p>
-          <a class="link js-cta" data-cta="price-listings" href="https://ovoko.be/fr/chercher?q=04L903024S">Voir les annonces de cette pièce sur Ovoko&nbsp;↗</a>
-        </div>
-      </div>
+      <p class="price__fine" id="price-src" hidden>Relevés le 25 septembre 2026. Ovoko&nbsp;: SAS Société Nouvelle Fornes (France, Meilleur vendeur), Golf VII 1.6 TDI de 2015, 127&nbsp;471&nbsp;km, livraison vers la Belgique. Neuve&nbsp;: alternateur Valeo 439791 (même référence 04L903024S) chez un revendeur en ligne livrant en Belgique.</p>
     </div>
   </div>
 </section>
@@ -227,23 +155,37 @@
     <h2 class="compare__title" id="compare-title">Plus de comparaisons de prix</h2>
     <div class="carousel" data-carousel>
       <div class="carousel__track">
-        <article class="ccard" data-reveal style="--used: 68.4%" aria-label="Volkswagen Golf VII, phare avant gauche">
+        <article class="ccard" data-reveal aria-label="Volkswagen Golf VII, phare avant gauche">
           <div class="ccard__head">
             <div><h4>Volkswagen Golf VII · Phare avant gauche</h4><p>Halogène · 2013–2017, réf. constructeur&nbsp;: 5G1941005</p></div>
             <span class="thumb"><img src="assets/img/thumb-golf-headlight.jpg" alt="" width="75" height="65" loading="lazy"></span>
           </div>
-          <div class="crow"><div class="cbar cbar--new"><span class="num">190&nbsp;€</span></div><p class="clabel">Neuve, équipementier d’origine (Valeo)</p></div>
-          <div class="crow"><div class="cbar cbar--used"><span class="num">130&nbsp;€</span></div><p class="clabel">Pièce d’origine, d’occasion sur Ovoko</p></div>
-          <div class="crow"><div class="cbar cbar--save"><span class="fill"><span class="num">60&nbsp;€</span></span></div><p class="clabel">Économie sur cette pièce</p></div>
+          <div class="deal deal--s" style="--pay: 68.4%">
+            <div class="deal__nums">
+              <div class="deal__col deal__col--new"><span class="deal__k">Neuf</span><s class="num">190&nbsp;€</s></div>
+              <span class="deal__op" aria-hidden="true">→</span>
+              <div class="deal__col deal__col--ovoko"><span class="deal__k">Sur Ovoko</span><b class="num">130&nbsp;€</b></div>
+              <span class="deal__op" aria-hidden="true">→</span>
+              <div class="deal__col deal__col--save"><span class="deal__k">Économie</span><span class="deal__save"><span class="num">60&nbsp;€</span></span></div>
+            </div>
+            <div class="deal__bar" aria-hidden="true"><i class="deal__pay"></i><i class="deal__saved"></i></div>
+          </div>
         </article>
-        <article class="ccard" data-reveal style="--used: 60.7%" aria-label="Peugeot 208 I, phare avant gauche">
+        <article class="ccard" data-reveal aria-label="Peugeot 208 I, phare avant gauche">
           <div class="ccard__head">
             <div><h4>Peugeot 208&nbsp;I · Phare avant gauche</h4><p>Halogène · 2012–2019, réf. constructeur&nbsp;: 9802221880</p></div>
             <span class="thumb"><img src="assets/img/l-vanderven.jpg" alt="" width="75" height="65" loading="lazy"></span>
           </div>
-          <div class="crow"><div class="cbar cbar--new"><span class="num">135&nbsp;€</span></div><p class="clabel">Neuve, équipementier d’origine (Valeo)</p></div>
-          <div class="crow"><div class="cbar cbar--used"><span class="num">82&nbsp;€</span></div><p class="clabel">Pièce d’origine, d’occasion sur Ovoko</p></div>
-          <div class="crow"><div class="cbar cbar--save"><span class="fill"><span class="num">53&nbsp;€</span></span></div><p class="clabel">Économie sur cette pièce</p></div>
+          <div class="deal deal--s" style="--pay: 60.7%">
+            <div class="deal__nums">
+              <div class="deal__col deal__col--new"><span class="deal__k">Neuf</span><s class="num">135&nbsp;€</s></div>
+              <span class="deal__op" aria-hidden="true">→</span>
+              <div class="deal__col deal__col--ovoko"><span class="deal__k">Sur Ovoko</span><b class="num">82&nbsp;€</b></div>
+              <span class="deal__op" aria-hidden="true">→</span>
+              <div class="deal__col deal__col--save"><span class="deal__k">Économie</span><span class="deal__save"><span class="num">53&nbsp;€</span></span></div>
+            </div>
+            <div class="deal__bar" aria-hidden="true"><i class="deal__pay"></i><i class="deal__saved"></i></div>
+          </div>
         </article>
       </div>
       <div class="pager">
@@ -285,29 +227,24 @@
 <!-- ================= Why it costs less ================= -->
 <section class="why section" aria-labelledby="why-title">
   <div class="container">
-    <div class="why__grid">
-      <div class="why__lead">
-        <h2 class="h2" id="why-title">Pourquoi la même pièce <span class="orange">coûte moins cher.</span></h2>
-        <p class="company company--lead">Lancé en 2014 par un propriétaire de casse automobile · Équipes en Lituanie, Pologne, Lettonie et Ukraine · Vendeurs professionnels&nbsp;: casses et recycleurs automobiles</p>
-      </div>
-      <div>
-        <ul class="reasons" data-mdots>
-          <li class="reason">
-            <img src="assets/img/why-1.jpg" alt="Voitures de donneurs empilées dans une casse" width="260" height="150" loading="lazy">
-            <div><h3>Des pièces issues de vrais véhicules.</h3><p>Les vendeurs Ovoko démontent de vrais véhicules&nbsp;: vous pouvez donc trouver la pièce montée en usine sur votre modèle. Chaque annonce indique la référence constructeur, pour savoir exactement ce que vous achetez.</p></div>
-          </li>
-          <li class="reason">
-            <img src="assets/img/why-2.jpg" alt="Moteurs démontés stockés chez un professionnel" width="260" height="150" loading="lazy">
-            <div><h3>Des casses professionnelles, pas des usines.</h3><p>Chaque vendeur est une entreprise enregistrée et chaque pièce se trouve déjà en Europe. Pas d’usine, pas de dropshipping.</p></div>
-          </li>
-          <li class="reason">
-            <img src="assets/img/why-3.jpg" alt="Vue aérienne d’une casse automobile" width="260" height="150" loading="lazy">
-            <div><h3>Des milliers de vendeurs en une seule recherche.</h3><p>Comparez l’état et le prix dans toute l’Europe, au lieu d’appeler les casses une par une.</p></div>
-          </li>
-        </ul>
-        <p class="company company--after">Lancé en 2014 par un propriétaire de casse automobile · Équipes en Lituanie, Pologne, Lettonie et Ukraine · Vendeurs professionnels&nbsp;: casses et recycleurs automobiles</p>
-      </div>
+    <div class="why__head">
+      <h2 class="h2" id="why-title">Pourquoi la même pièce <span class="orange">coûte moins cher&nbsp;?</span></h2>
+      <p class="why__answer">Parce qu’elle <b>existe déjà</b>&nbsp;: elle est démontée d’un vrai véhicule et vendue directement par une casse professionnelle.</p>
     </div>
+    <ol class="why__flow" data-mslider>
+      <li class="wstep">
+        <img src="assets/img/why-1.jpg" alt="Voitures de donneurs empilées dans une casse" width="520" height="300" loading="lazy">
+        <div class="wstep__body"><span class="wstep__n">1</span><h3>Déjà fabriquée</h3><p>La pièce vient d’un vrai véhicule&nbsp;: pas besoin de la produire.</p></div>
+      </li>
+      <li class="wstep">
+        <img src="assets/img/why-2.jpg" alt="Moteurs démontés stockés chez un professionnel" width="520" height="300" loading="lazy">
+        <div class="wstep__body"><span class="wstep__n">2</span><h3>Vendue en direct</h3><p>Par une casse professionnelle enregistrée, sans concessionnaire au milieu.</p></div>
+      </li>
+      <li class="wstep">
+        <img src="assets/img/why-3.jpg" alt="Vue aérienne d’une casse automobile" width="520" height="300" loading="lazy">
+        <div class="wstep__body"><span class="wstep__n">3</span><h3>Prix en concurrence</h3><p>7&nbsp;400 vendeurs européens, comparés en une seule recherche.</p></div>
+      </li>
+    </ol>
   </div>
 </section>
 

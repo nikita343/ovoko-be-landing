@@ -6,13 +6,6 @@ Static site with no build step. Open `index.html` in a browser to preview it.
 - `index.html`: full page
 - `simple.html`: short version
 
-## Hero A / Hero B
-Both pages include both heroes:
-- Hero A is the default.
-- Hero B loads when you add `?hero=b` to the URL, e.g. `index.html?hero=b`.
-
-Use the two URLs as the two ad variants.
-
 ## Tracking
 - UTM parameters and click IDs (fbclid, gclid) on the landing URL are passed through to every ovoko.be link.
 - When the landing URL has none, links get `utm_source=landing&utm_medium=lp_be_fr`.
