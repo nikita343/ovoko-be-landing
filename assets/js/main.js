@@ -4,20 +4,6 @@
   var mq = function (q) { return window.matchMedia(q).matches; };
   var reduceMotion = mq('(prefers-reduced-motion: reduce)');
 
-  /* 1 · UTM / click-id pass-through to every ovoko.be link */
-  var keep = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'];
-  var params = new URLSearchParams(location.search);
-  var carry = new URLSearchParams();
-  keep.forEach(function (k) { if (params.get(k)) carry.set(k, params.get(k)); });
-  if (!carry.has('utm_source')) { carry.set('utm_source', 'landing'); carry.set('utm_medium', 'lp_be_fr'); }
-  document.querySelectorAll('a[href^="https://ovoko.be"]').forEach(function (a) {
-    try {
-      var u = new URL(a.href);
-      carry.forEach(function (v, k) { if (!u.searchParams.has(k)) u.searchParams.set(k, v); });
-      a.href = u.toString();
-    } catch (e) {}
-  });
-
   /* 2 · Click-out tracking (the conversion). Works with Meta Pixel and/or GTM when present. */
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('.js-cta');
