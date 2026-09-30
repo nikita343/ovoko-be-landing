@@ -6,11 +6,11 @@ Static site with no build step. Open `index.html` in a browser to preview it.
 - `index.html`: full page
 - `simple.html`: short version
 
-## Tracking
-- UTM parameters and click IDs (fbclid, gclid) on the landing URL are passed through to every ovoko.be link.
-- When the landing URL has none, links get `utm_source=landing&utm_medium=lp_be_fr`.
+## Links & tracking
+- Links go out exactly as written: no UTM parameters or click IDs are added.
+- Every external link opens in a new tab (`target="_blank" rel="noopener"`).
+- All "Trouvez votre pièce" buttons link to https://ovoko.be/fr.
 - Every CTA click sends `fbq('trackCustom','OutboundClick',{cta})` and pushes `outbound_click` to `dataLayer`.
-- The hero listing cards count as CTAs too (`hero-card-*`).
 - Paste the Meta Pixel base code where the `<!-- Meta Pixel -->` comment is, in the `<head>` of both pages.
 
 ## Motion
@@ -43,7 +43,6 @@ The logos in `assets/press/` come from these sources:
 - Les Numériques: the logo on its own site.
 - Le Journal de l'Automobile: traced from the logo on its site.
 
-## Before going live
-- FAQ questions 2–6 need a native French proofread.
-- "100 % entreprises vérifiées": needs a confirmed source.
-- The 76 % footnote: confirm what the study compared.
+## Claims
+- The "−76 %" and "1 an de garantie" claims point to the two notes above the footer, which link to ovoko.fr/blog/pieces-auto-doccasion-vs-neuves and ovoko.be/fr/retours-et-garantie.
+- The French copy of `index.html` follows the client's copy review of 29–30 September 2026.
